@@ -3,11 +3,99 @@
     <head>
         <title>404: Page not found!</title>
         <link rel="shortcut icon" type="image/png" href="https://github.com/YJJcoolcool/openmrs404page/blob/master/openmrs_logo.png?raw=true"/>
+    
+        <style>
+            *{
+                margin: 0;
+                color: #333333;
+                font-family: Arial;
+            }
+
+            .links td{
+                background-color: #EEA730;
+                color: black;
+                font-size: 20px;
+                padding: 10px;
+                border: 3px solid black;
+                border-radius: 10px;
+                text-align: center;
+                transition: background-color 0.5s;
+            }
+
+            .links td:hover{
+                background-color: #A56D0D;
+            }
+
+            .links a{
+                text-decoration: none;
+                font-weight: bold;
+                color: black;
+            }
+
+            table {
+                margin: 0 auto;
+            }
+
+            .logo{
+                display:block;
+                margin-left:auto;
+                margin-right:auto;
+            }
+
+            @media (min-width:600px) {
+                .logo{
+                    width:35%;
+                } 
+            }
+
+            @media (max-width:800px) {
+                .logo{
+                    width:50%;
+                } 
+            }
+
+                
+        </style>
     </head>
 
 
 
-    <body>
+    <body style="background-color: #FFFBF2;">
+        <div class="top-banner">
 
+        </div>
+        <div class="content" style="text-align: center; margin-top:15%;">
+            <div class="top-text">
+            <h1 style="font-weight: lighter;">Error 404</h1>
+            <h1>The page you were looking for could not be found!</h1>
+            <br>
+            <br>
+            <h3>This could be because:</h3>
+            </div>
+            <table style="margin-left: 30%; margin-right: 30%; text-align: left;">
+                <tr>
+                    <td><li>The page was removed or simply does not exist</li></td>
+                </tr>
+                <tr>
+                    <td><li>The link you typed in is incorrect</li></td>
+                </tr>
+            </table>
+            <br>
+            <br>
+            <h3>Here are a few useful links:</h3>
+            <br>
+            </div>
+            <table class="links" style="text-align: center;">
+                <tr>
+                    <td><a href="https://openmrs.org/">Home</a></td>
+                    <td><a href="https://openmrs.org/about/">About Us</a></td>
+                    <td><a href="https://openmrs.org/download/">Download</a></td>
+                    <td><a href="https://openmrs.org/about/contact/">Contact Us</a></td>
+                </tr>
+            </table>
+            <br>
+            <br>
+            <img class="logo" src="https://openmrs.org/wp-content/uploads/2013/07/OpenMRS-logo.svg">
+        </div>
     </body>
 </html>
